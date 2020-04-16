@@ -24,6 +24,7 @@
 			window.setTimeout(function() {
 				$body.removeClass('is-preload');
 			}, 100);
+			dataLayer.push({'category': 'test_cat1', 'action': 'test_act1', 'label': 'test_lab1'});
 		});
 
 	// Dropdowns.
