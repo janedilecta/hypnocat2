@@ -100,11 +100,12 @@
           if (userGuess < randomNumber) {
             lowOrHi.textContent  = 'Last guess was too low!';
             window.dataLayer.push({'category': 'test_cat1', 'action': 'test_act1', 'label': 'test_lab_too_low'});
+            console.log('hello beautiful world!');
           } else if (userGuess > randomNumber) {
             lowOrHi.textContent = 'Last guess was too high!';
             console.log('hello world!');
             window.dataLayer = window.dataLayer || [];
-            dataLayer.push({'category': 'test_cat1', 'action': 'test_act1', 'label': 'test_lab_too_high'});
+            dataLayer.push({'category': 'test_cat', 'action': 'test_act', 'label': 'test_lab'});
           }
         }
         
