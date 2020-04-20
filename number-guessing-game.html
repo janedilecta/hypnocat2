@@ -99,10 +99,10 @@
           lastResult.style.backgroundColor = 'red';
           if (userGuess < randomNumber) {
             lowOrHi.textContent  = 'Last guess was too low!';
-            dataLayer.push({'category': 'test_cat1', 'action': 'test_act1', 'label': 'test_lab_too_low'});
+            window.dataLayer.push({'category': 'test_cat1', 'action': 'test_act1', 'label': 'test_lab_too_low'});
           } else if (userGuess > randomNumber) {
             lowOrHi.textContent = 'Last guess was too high!';
-            dataLayer.push({'category': 'test_cat1', 'action': 'test_act1', 'label': 'test_lab_too_high'});
+            window.dataLayer.push({'category': 'test_cat1', 'action': 'test_act1', 'label': 'test_lab_too_high'});
           }
         }
         
