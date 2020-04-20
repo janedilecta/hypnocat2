@@ -99,18 +99,14 @@
           lastResult.style.backgroundColor = 'red';
           if (userGuess < randomNumber) {
             lowOrHi.textContent  = 'Last guess was too low!';
-            return function () {
-              window.dataLayer.push({'category': 'test_cat1', 'action': 'test_act1', 'label': 'test_lab_too_low'});
+              window.dataLayer.push({'gaevent':'gaevent','category': 'test_cat1', 'action': 'test_act1', 'label': 'test_lab_too_low'});
               console.log('hello beautiful world!');
-            }
           
           } else if (userGuess > randomNumber) {
             lowOrHi.textContent = 'Last guess was too high!';
-            return function (){
               console.log('hello world!');
               window.dataLayer = window.dataLayer || [];
               dataLayer.push({'gaevent':'gaevent', 'category': 'test_cat', 'action': 'test_act', 'label': 'test_lab'});
-            }
 
           }
         }
