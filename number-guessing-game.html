@@ -109,7 +109,7 @@
             return function (){
               console.log('hello world!');
               window.dataLayer = window.dataLayer || [];
-              dataLayer.push({'category': 'test_cat', 'action': 'test_act', 'label': 'test_lab'});
+              dataLayer.push({'event':'gaevent', 'category': 'test_cat', 'action': 'test_act', 'label': 'test_lab'});
             }
 
           }
