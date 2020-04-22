@@ -57,7 +57,7 @@
 
     <div class="form">
       <label for="guessField">Enter a guess: </label><input type="text" id="guessField" class="guessField">
-      <input type="submit" value="Submit guess" class="guessSubmit">
+      <input type="submit" value="Submit guess" class="guessSubmit" onclick="dataLayer.push({'event':'gaevent', 'event_category': 'test_cat', 'event_action': 'test_act', 'event_label': 'test_lab', 'user_loginid':'test_button'});">
     </div>
 
     <div class="resultParas">
@@ -100,13 +100,13 @@
           lastResult.style.backgroundColor = 'red';
           if (userGuess < randomNumber) {
             lowOrHi.textContent  = 'Last guess was too low!';
-              dataLayer.push({'event':'gaevent','event_category': 'test_cat1', 'event_action': 'test_act1', 'event_label': 'test lab too low', 'user_loginid': 'test456'});
+              dataLayer.push({'event':'gaevent','event_category': 'test_cat1', 'event_action': 'test_act1', 'event_label': 'test lab too low'});
               console.log('hello beautiful world!');
           
           } else if (userGuess > randomNumber) {
             lowOrHi.textContent = 'Last guess was too high!';
               console.log('hello world!');
-              window.dataLayer.push({'event':'gaevent', 'event_category': 'test_cat', 'event_action': 'test_act', 'event_label': 'test lab too high', 'user_loginid': 'test123'});
+              window.dataLayer.push({'event':'gaevent', 'event_category': 'test_cat', 'event_action': 'test_act', 'event_label': 'test lab too high'});
 
           }
         }
