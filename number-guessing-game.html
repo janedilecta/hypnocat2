@@ -89,7 +89,7 @@
         if (userGuess === randomNumber) {
           lastResult.textContent = 'Congratulations! You got it right!';
           lastResult.style.backgroundColor = 'green';
-          dataLayer.push({'event':'gaevent', 'event_category': 'test_cat', 'event_action': 'test_act', 'event_label': 'test_win'});
+          dataLayer.push({'event':'gaevent', 'event_category': 'test_cat', 'event_action': 'test_act', 'event_label': 'test win'});
           lowOrHi.textContent = ' ';
           setGameOver();
         } else if (guessCount === 10) {
@@ -100,13 +100,13 @@
           lastResult.style.backgroundColor = 'red';
           if (userGuess < randomNumber) {
             lowOrHi.textContent  = 'Last guess was too low!';
-              window.dataLayer.push({'event':'gaevent','event_category': 'test_cat1', 'event_action': 'test_act1', 'event_label': 'test_lab_too_low'});
+              dataLayer.push({'event':'gaevent','event_category': 'test_cat1', 'event_action': 'test_act1', 'event_label': 'test lab too low', 'user_loginid': 'test456'});
               console.log('hello beautiful world!');
           
           } else if (userGuess > randomNumber) {
             lowOrHi.textContent = 'Last guess was too high!';
               console.log('hello world!');
-              window.dataLayer.push({'event':'gaevent', 'event_category': 'test_cat', 'event_action': 'test_act', 'event_label': 'test_lab', 'user_loginid': 'test123'});
+              window.dataLayer.push({'event':'gaevent', 'event_category': 'test_cat', 'event_action': 'test_act', 'event_label': 'test lab too high', 'user_loginid': 'test123'});
 
           }
         }
