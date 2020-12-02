@@ -12,6 +12,30 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
 	</head>
 	<body class="is-preload">
+		<!-- Tealium test -->
+
+		<script type="text/javascript">
+			var utag_data = {
+				event_category: ['test'],
+				event_action: ['test1'],
+				event_label: ['test2']
+			  //product_id: ['516751'], 
+			  //product_name: ['testing prod2'],
+			  //product_price: ['110'], 
+			  //order_id: ['56211'], 
+			  //order_quantity: ['1112']
+			}
+		</script>
+
+		<!-- Loading script asynchronously -->
+		<script type="text/javascript">
+			(function(a,b,c,d){
+			a='https://tags.tiqcdn.com/utag/integratedmaster/sandbox-jane/prod/utag.js';
+			b=document;c='script';d=b.createElement(c);d.src=a;d.type='text/java'+c;d.async=true;
+			a=b.getElementsByTagName(c)[0];a.parentNode.insertBefore(d,a);
+			})();
+		</script>
+
 		<div id="page-wrapper">
 
 			<!-- Header -->
